@@ -4,3 +4,6 @@
 [submodule "local-path-provisioner"]
 	path = local-path-provisioner
 	url = https://github.com/ashaver/local-path-provisioner.git
+[submodule "sonarqube-kubernetes"]
+	path = sonarqube-kubernetes
+	url = https://github.com/ashaver/sonarqube-kubernetes.git

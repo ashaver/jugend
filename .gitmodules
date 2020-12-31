@@ -1,0 +1,6 @@
+[submodule "contour"]
+	path = contour
+	url = https://github.com/ashaver/contour.git
+[submodule "local-path-provisioner"]
+	path = local-path-provisioner
+	url = https://github.com/ashaver/local-path-provisioner.git

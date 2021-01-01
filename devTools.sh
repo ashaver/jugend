@@ -1,1 +1,2 @@
-./sonarqube-kubernetes/k8s/deploy.sh
+cd ./sonarqube-kubernetes/k8s/
+./deploy.sh

@@ -6,7 +6,7 @@ Day one (install) is ridiculously easy with Kind K8s installs 'kind create clust
 Jugend is an attempt to make a more mature and complete Kind installation. Overall, it should developers clear both the day one and day two hurdles quickly, so they can learn about the tech and start using it.
 
 ## Instructions
-Install git submodules. Install the required libraries per the prerequisites. Then install the kind server. Then when you're done tear everything down.
+Install git, install curl, install wget, install docker. Then, install git submodules. Install the required libraries per the prerequisites. Then install the kind server. Then when you're done tear everything down.
 
 As things stand, the kind server and image repo will survive restarts (though any software installed into Kind will only survive if it is designated to).
 

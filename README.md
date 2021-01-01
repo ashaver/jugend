@@ -52,7 +52,7 @@ Run all the steps with
 ```bash
 ./runDayOneAndTwo.sh
 ```
-or cd into the install directory and run scripts individually. Each step is sequestered into a separate script to provide flexibility (so that you could comment out steps as desired).
+or cd into the install (dayOneDayTwo) directory and run scripts individually. Each step is sequestered into a separate script to provide flexibility (so that you could comment out steps as desired).
 ### Tear Down
 Execute the below command to remove the kind cluster and the image repo
 ```bash

@@ -6,3 +6,4 @@ cd dayOneAndTwo
 ./1-docker-registry.sh
 ./2-dynamic-provisioning.sh
 ./3-backup-with-velero-minio.sh
+./4-mesh-networking.sh

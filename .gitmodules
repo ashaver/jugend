@@ -4,3 +4,6 @@
 [submodule "local-path-provisioner"]
 	path = local-path-provisioner
 	url = https://github.com/ashaver/local-path-provisioner.git
+[submodule "calico"]
+	path = calico
+	url = https://github.com/projectcalico/calico

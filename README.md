@@ -69,12 +69,11 @@ Keeping the image registry as a persistent thing helps avoid docker  pull reques
 * Ingress (via a fork of contour with a simple change to create a two node cluster, as suggested by the kind K8s documentation)
 * Persistent Image repository (following documentation from Kind on running with a local repo)
 * Backup with Velero and Minio (with minio being external to the cluster)
+* Multi-worker cluster
+* Mesh Networking (via calico)
 
 ## Planned Future Work
 * TODO: Move Velero installation to a container-based install
-* TODO: Multi-Worker Node
-* TODO: ISTIO/Mesh
-
 
 ## Possible Future Work
 * TODO: External Auth for Roles

@@ -1,9 +1,9 @@
 # Jugend
-So the name. It is a nod to [Kind](https://kind.sigs.k8s.io/) being the German word for child. Jugend is German for youth. 
+So the name. It starts with the Kubernetes IN Docker server [Kind](https://kind.sigs.k8s.io/). Kind is also the German word for child. Jugend is German for youth. 
 
-Day one (install) is ridiculously easy with Kind K8s installs 'kind create cluster'. In contrast, day two tasks require substantial work. The documentation for Kind actively fights search engines (because kind is a keyword in kubernetes yaml configs, so nearly every distro comes up, poisoning the search). 
+Day one (install) is ridiculously easy with Kind, 'kind create cluster'. In contrast, day two tasks can require substantial work and research. The documentation for Kind actively fights search engines (because kind is a keyword in kubernetes yaml configs, so nearly every distro comes up, poisoning the search). 
 
-Jugend is an attempt to make a more mature and complete Kind installation. Overall, it should developers clear both the day one and day two hurdles quickly, so they can learn about the tech and start using it.
+Jugend is an attempt to help developers clear both the day one and day two hurdles quickly, so they can learn about the tech and start using it. As that one past day one and two in to a more mature K8s instance (you know where you can actually use it), I thought the name Jugend made sense.
 
 ## Instructions
 Install git, install curl, install wget, install docker. Then, install git submodules. Install the required libraries per the prerequisites. Then install the kind server. Then when you're done tear everything down.

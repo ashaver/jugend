@@ -10,5 +10,5 @@ velero install \
  --secret-file ./credentials-minio  \
  --use-volume-snapshots=true \
  --backup-location-config region=default,s3ForcePathStyle="true",s3Url=http://localhost:9000  \
- --image velero/velero:v1.5.1  \
+ --image velero/velero:v1.9.2  \
  --snapshot-location-config region="default" \

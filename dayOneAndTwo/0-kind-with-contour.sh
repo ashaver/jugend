@@ -16,12 +16,12 @@ if [ "$(docker inspect -f '{{.State.Running}}' "${reg_name}" 2>/dev/null || true
         -e REGISTRY_PROXY_REMOTEURL=https://registry-1.docker.io registry:2
 fi
 
-# reg_name='proxy-registry.k8s.io'
-# reg_port='5003'
-# if [ "$(docker inspect -f '{{.State.Running}}' "${reg_name}" 2>/dev/null || true)" != 'true' ]; then
-#     docker run -d --name ${reg_name} --restart=always --net=kind  -p "127.0.0.1:${reg_port}:5000"  \
-#         -e REGISTRY_PROXY_REMOTEURL=https://registry.k8s.io registry:2
-# fi
+reg_name='proxy-registry.gitlab.com'
+reg_port='5003'
+if [ "$(docker inspect -f '{{.State.Running}}' "${reg_name}" 2>/dev/null || true)" != 'true' ]; then
+    docker run -d --name ${reg_name} --restart=always --net=kind  -p "127.0.0.1:${reg_port}:5000"  \
+        -e REGISTRY_PROXY_REMOTEURL=https://registry.gitlab.com registry:2
+fi
 
 # create local registry container unless it already exists
 reg_name='kind-registry'

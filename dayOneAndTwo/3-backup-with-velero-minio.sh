@@ -1,7 +1,10 @@
 #!/bin/sh
 set -o errexit
+if [ "$(docker inspect -f '{{.State.Running}}' "minio" 2>/dev/null || true)" != 'true' ]; then
+    docker run -d -p 9000:9000 -e MINIO_ACCESS_KEY=minioadmin1  -e MINIO_SECRET_KEY=minioadmin1 --name minio  -v $pwd/data:/data minio/minio server
+fi
 
-docker run -d -p 9000:9000 -e MINIO_ACCESS_KEY=minioadmin1  -e MINIO_SECRET_KEY=minioadmin1 --name minio  -v $pwd/data:/data minio/minio server
+
 
 velero install \
  --provider aws \
